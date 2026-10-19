@@ -1,0 +1,4251 @@
+.btn {
+    border-width: 2px;
+  }
+  body {
+    font-family: Jost;
+  }
+  .vitaslimex-show1 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 4rem;
+    line-height: 1.1;
+  }
+  .vitaslimex-show1 > .vitaslimex-iconfont {
+    font-size: 5rem;
+  }
+  .vitaslimex-show2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 2.6rem;
+    line-height: 1.1;
+  }
+  .vitaslimex-show2 > .vitaslimex-iconfont {
+    font-size: 3.25rem;
+  }
+  .vitaslimex-show4 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  .vitaslimex-show4 > .vitaslimex-iconfont {
+    font-size: 1.75rem;
+  }
+  .vitaslimex-show5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .vitaslimex-show5 > .vitaslimex-iconfont {
+    font-size: 2.25rem;
+  }
+  .vitaslimex-show7 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+  }
+  .vitaslimex-show7 > .vitaslimex-iconfont {
+    font-size: 1.75rem;
+  }
+
+      /* fix the scroll (e.g., 90px) */
+html { scroll-behavior: smooth; }
+[id] { scroll-margin-top: 90px; }   /* 80px = header height */
+
+
+.fix-image-wrap-bonus-img {
+  max-width: 200px; /* or any width you want */
+  width: 100%;
+  margin: 0 auto; /* centers it inside parent */
+  display: block; /* ensures it behaves like a block element */
+}
+
+  @media (max-width: 992px) {
+    .vitaslimex-show1 {
+      font-size: 3.2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .vitaslimex-show1 {
+      font-size: 2.8rem;
+      font-size: calc( 2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20)));
+      line-height: calc( 1.1 * (2.05rem + (4 - 2.05) * ((100vw - 20rem) / (48 - 20))));
+    }
+    .vitaslimex-show2 {
+      font-size: 2.08rem;
+      font-size: calc( 1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20)));
+      line-height: calc( 1.3 * (1.56rem + (2.6 - 1.56) * ((100vw - 20rem) / (48 - 20))));
+    }
+    .vitaslimex-show4 {
+      font-size: 1.12rem;
+      font-size: calc( 1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)));
+      line-height: calc( 1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20))));
+    }
+    .vitaslimex-show5 {
+      font-size: 1.44rem;
+      font-size: calc( 1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20)));
+      line-height: calc( 1.4 * (1.28rem + (1.8 - 1.28) * ((100vw - 20rem) / (48 - 20))));
+    }
+    .vitaslimex-show7 {
+      font-size: 1.12rem;
+      font-size: calc( 1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20)));
+      line-height: calc( 1.4 * (1.14rem + (1.4 - 1.14) * ((100vw - 20rem) / (48 - 20))));
+    }
+  }
+  /* Buttons */
+  .btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+  }
+  .btn-sm {
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+  }
+  .btn-md {
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+  }
+  .btn-lg {
+    padding: 1rem 2.6rem;
+    border-radius: 4px;
+  }
+  .bg-primary {
+    background-color: #6592e6 !important;
+  }
+  .bg-success {
+    background-color: #ffffff !important;
+  }
+  .bg-info {
+    background-color: #ffffff !important;
+  }
+  .bg-warning {
+    background-color: #ffe800 !important;
+  }
+  .bg-danger {
+    background-color: #ff9966 !important;
+  }
+  .btn-primary,
+  .btn-primary:active {
+    background-color: #6592e6 !important;
+    border-color: #6592e6 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary.focus,
+  .btn-primary.active {
+    color: #ffffff !important;
+    background-color: #2260d2 !important;
+    border-color: #2260d2 !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-primary.disabled,
+  .btn-primary:disabled {
+    color: #ffffff !important;
+    background-color: #2260d2 !important;
+    border-color: #2260d2 !important;
+  }
+  .btn-secondary,
+  .btn-secondary:active {
+    background-color: #fd305c !important;
+    border-color: #fd305c !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-secondary:hover,
+  .btn-secondary:focus,
+  .btn-secondary.focus,
+  .btn-secondary.active {
+    color: #ffffff !important;
+    background-color: #d4022f !important;
+    border-color: #d4022f !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-secondary.disabled,
+  .btn-secondary:disabled {
+    color: #ffffff !important;
+    background-color: #d4022f !important;
+    border-color: #d4022f !important;
+  }
+  .btn-info,
+  .btn-info:active {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #808080 !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-info:hover,
+  .btn-info:focus,
+  .btn-info.focus,
+  .btn-info.active {
+    color: #545454 !important;
+    background-color: #d4d4d4 !important;
+    border-color: #d4d4d4 !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-info.disabled,
+  .btn-info:disabled {
+    color: #808080 !important;
+    background-color: #d4d4d4 !important;
+    border-color: #d4d4d4 !important;
+  }
+  .btn-success,
+  .btn-success:active {
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+    color: #808080 !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-success:hover,
+  .btn-success:focus,
+  .btn-success.focus,
+  .btn-success.active {
+    color: #545454 !important;
+    background-color: #d4d4d4 !important;
+    border-color: #d4d4d4 !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-success.disabled,
+  .btn-success:disabled {
+    color: #808080 !important;
+    background-color: #d4d4d4 !important;
+    border-color: #d4d4d4 !important;
+  }
+  .btn-warning,
+  .btn-warning:active {
+    background-color: #ffe800 !important;
+    border-color: #ffe800 !important;
+    color: #000000 !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-warning:hover,
+  .btn-warning:focus,
+  .btn-warning.focus,
+  .btn-warning.active {
+    color: #000000 !important;
+    background-color: #fffb00 !important;
+    border-color: #a89900 !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-warning.disabled,
+  .btn-warning:disabled {
+    color: #000000 !important;
+    background-color: #a89900 !important;
+    border-color: #a89900 !important;
+  }
+  .btn-danger,
+  .btn-danger:active {
+    background-color: #ff9966 !important;
+    border-color: #ff9966 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-danger:hover,
+  .btn-danger:focus,
+  .btn-danger.focus,
+  .btn-danger.active {
+    color: #ffffff !important;
+    background-color: #ff5f0f !important;
+    border-color: #ff5f0f !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-danger.disabled,
+  .btn-danger:disabled {
+    color: #ffffff !important;
+    background-color: #ff5f0f !important;
+    border-color: #ff5f0f !important;
+  }
+  .btn-white,
+  .btn-white:active {
+    background-color: #fafafa !important;
+    border-color: #fafafa !important;
+    color: #7a7a7a !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-white:hover,
+  .btn-white:focus,
+  .btn-white.focus,
+  .btn-white.active {
+    color: #4f4f4f !important;
+    background-color: #cfcfcf !important;
+    border-color: #cfcfcf !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-white.disabled,
+  .btn-white:disabled {
+    color: #7a7a7a !important;
+    background-color: #cfcfcf !important;
+    border-color: #cfcfcf !important;
+  }
+  .btn-black,
+  .btn-black:active {
+    background-color: #232323 !important;
+    border-color: #232323 !important;
+    color: #ffffff !important;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-black:hover,
+  .btn-black:focus,
+  .btn-black.focus,
+  .btn-black.active {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+  .btn-black.disabled,
+  .btn-black:disabled {
+    color: #ffffff !important;
+    background-color: #000000 !important;
+    border-color: #000000 !important;
+  }
+  .btn-primary-outline,
+  .btn-primary-outline:active {
+    background-color: transparent !important;
+    border-color: #6592e6;
+    color: #6592e6;
+  }
+  .btn-primary-outline:hover,
+  .btn-primary-outline:focus,
+  .btn-primary-outline.focus,
+  .btn-primary-outline.active {
+    color: #2260d2 !important;
+    background-color: transparent!important;
+    border-color: #2260d2 !important;
+    box-shadow: none!important;
+  }
+  .btn-primary-outline.disabled,
+  .btn-primary-outline:disabled {
+    color: #ffffff !important;
+    background-color: #6592e6 !important;
+    border-color: #6592e6 !important;
+  }
+  .btn-secondary-outline,
+  .btn-secondary-outline:active {
+    background-color: transparent !important;
+    border-color: #fd305c;
+    color: #fd305c;
+  }
+  .btn-secondary-outline:hover,
+  .btn-secondary-outline:focus,
+  .btn-secondary-outline.focus,
+  .btn-secondary-outline.active {
+    color: #d4022f !important;
+    background-color: transparent!important;
+    border-color: #d4022f !important;
+    box-shadow: none!important;
+  }
+  .btn-secondary-outline.disabled,
+  .btn-secondary-outline:disabled {
+    color: #ffffff !important;
+    background-color: #fd305c !important;
+    border-color: #fd305c !important;
+  }
+  .btn-info-outline,
+  .btn-info-outline:active {
+    background-color: transparent !important;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .btn-info-outline:hover,
+  .btn-info-outline:focus,
+  .btn-info-outline.focus,
+  .btn-info-outline.active {
+    color: #d4d4d4 !important;
+    background-color: transparent!important;
+    border-color: #d4d4d4 !important;
+    box-shadow: none!important;
+  }
+  .btn-info-outline.disabled,
+  .btn-info-outline:disabled {
+    color: #808080 !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  .btn-success-outline,
+  .btn-success-outline:active {
+    background-color: transparent !important;
+    border-color: #ffffff;
+    color: #ffffff;
+  }
+  .btn-success-outline:hover,
+  .btn-success-outline:focus,
+  .btn-success-outline.focus,
+  .btn-success-outline.active {
+    color: #d4d4d4 !important;
+    background-color: transparent!important;
+    border-color: #d4d4d4 !important;
+    box-shadow: none!important;
+  }
+  .btn-success-outline.disabled,
+  .btn-success-outline:disabled {
+    color: #808080 !important;
+    background-color: #ffffff !important;
+    border-color: #ffffff !important;
+  }
+  .btn-warning-outline,
+  .btn-warning-outline:active {
+    background-color: transparent !important;
+    border-color: #ffe800;
+    color: #ffe800;
+  }
+  .btn-warning-outline:hover,
+  .btn-warning-outline:focus,
+  .btn-warning-outline.focus,
+  .btn-warning-outline.active {
+    color: #a89900 !important;
+    background-color: transparent!important;
+    border-color: #a89900 !important;
+    box-shadow: none!important;
+  }
+  .btn-warning-outline.disabled,
+  .btn-warning-outline:disabled {
+    color: #000000 !important;
+    background-color: #ffe800 !important;
+    border-color: #ffe800 !important;
+  }
+  .btn-danger-outline,
+  .btn-danger-outline:active {
+    background-color: transparent !important;
+    border-color: #ff9966;
+    color: #ff9966;
+  }
+  .btn-danger-outline:hover,
+  .btn-danger-outline:focus,
+  .btn-danger-outline.focus,
+  .btn-danger-outline.active {
+    color: #ff5f0f !important;
+    background-color: transparent!important;
+    border-color: #ff5f0f !important;
+    box-shadow: none!important;
+  }
+  .btn-danger-outline.disabled,
+  .btn-danger-outline:disabled {
+    color: #ffffff !important;
+    background-color: #ff9966 !important;
+    border-color: #ff9966 !important;
+  }
+  .btn-black-outline,
+  .btn-black-outline:active {
+    background-color: transparent !important;
+    border-color: #232323;
+    color: #232323;
+  }
+  .btn-black-outline:hover,
+  .btn-black-outline:focus,
+  .btn-black-outline.focus,
+  .btn-black-outline.active {
+    color: #000000 !important;
+    background-color: transparent!important;
+    border-color: #000000 !important;
+    box-shadow: none!important;
+  }
+  .btn-black-outline.disabled,
+  .btn-black-outline:disabled {
+    color: #ffffff !important;
+    background-color: #232323 !important;
+    border-color: #232323 !important;
+  }
+  .btn-white-outline,
+  .btn-white-outline:active {
+    background-color: transparent !important;
+    border-color: #fafafa;
+    color: #fafafa;
+  }
+  .btn-white-outline:hover,
+  .btn-white-outline:focus,
+  .btn-white-outline.focus,
+  .btn-white-outline.active {
+    color: #cfcfcf !important;
+    background-color: transparent!important;
+    border-color: #cfcfcf !important;
+    box-shadow: none!important;
+  }
+  .btn-white-outline.disabled,
+  .btn-white-outline:disabled {
+    color: #7a7a7a !important;
+    background-color: #fafafa !important;
+    border-color: #fafafa !important;
+  }
+  .text-primary {
+    color: #6592e6 !important;
+  }
+  .text-secondary {
+    color: #fd305c !important;
+  }
+  .text-success {
+    color: #ffffff !important;
+  }
+  .text-info {
+    color: #ffffff !important;
+  }
+  .text-warning {
+    color: #ffe800 !important;
+  }
+  .text-danger {
+    color: #ff9966 !important;
+  }
+  .text-white {
+    color: #fafafa !important;
+  }
+  .text-black {
+    color: #232323 !important;
+  }
+  a.text-primary:hover,
+  a.text-primary:focus,
+  a.text-primary.active {
+    color: #205ac5 !important;
+  }
+  a.text-secondary:hover,
+  a.text-secondary:focus,
+  a.text-secondary.active {
+    color: #c5022c !important;
+  }
+  a.text-success:hover,
+  a.text-success:focus,
+  a.text-success.active {
+    color: #cccccc !important;
+  }
+  a.text-info:hover,
+  a.text-info:focus,
+  a.text-info.active {
+    color: #cccccc !important;
+  }
+  a.text-warning:hover,
+  a.text-warning:focus,
+  a.text-warning.active {
+    color: #998b00 !important;
+  }
+  a.text-danger:hover,
+  a.text-danger:focus,
+  a.text-danger.active {
+    color: #ff5500 !important;
+  }
+  a.text-white:hover,
+  a.text-white:focus,
+  a.text-white.active {
+    color: #c7c7c7 !important;
+  }
+  a.text-black:hover,
+  a.text-black:focus,
+  a.text-black.active {
+    color: #000000 !important;
+  }
+  a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.vitaslimex-caption) {
+    position: relative;
+    background-image: transparent;
+    background-size: 10000px 2px;
+    background-repeat: no-repeat;
+    background-position: 0px 1.2em;
+    background-position: -10000px 1.2em;
+  }
+  a[class*="text-"]:not(.nav-link):not(.dropdown-item):not([role]):not(.vitaslimex-caption):hover {
+    transition: background-position 2s ease-in-out;
+    background-image: linear-gradient(currentColor 50%, currentColor 50%);
+    background-position: 0px 1.2em;
+  }
+  .nav-tabs .nav-link.active {
+    color: #6592e6;
+  }
+  .nav-tabs .nav-link:not(.active) {
+    color: #232323;
+  }
+  .alert-success {
+    background-color: #70c770;
+  }
+  .alert-info {
+    background-color: #ffffff;
+  }
+  .alert-warning {
+    background-color: #ffe800;
+  }
+  .alert-danger {
+    background-color: #ff9966;
+  }
+  .vitaslimex-section-btn a.btn:not(.btn-form) {
+    border-radius: 100px;
+  }
+  .vitaslimex-gallery-filter li a {
+    border-radius: 100px !important;
+  }
+  .vitaslimex-gallery-filter li.active .btn {
+    background-color: #6592e6;
+    border-color: #6592e6;
+    color: #ffffff;
+  }
+  .vitaslimex-gallery-filter li.active .btn:focus {
+    box-shadow: none;
+  }
+  .nav-tabs .nav-link {
+    border-radius: 100px !important;
+  }
+  a,
+  a:hover {
+    color: #6592e6;
+  }
+  .vitaslimex-plan-header.bg-primary .vitaslimex-plan-subtitle,
+  .vitaslimex-plan-header.bg-primary .vitaslimex-plan-price-desc {
+    color: #ffffff;
+  }
+  .vitaslimex-plan-header.bg-success .vitaslimex-plan-subtitle,
+  .vitaslimex-plan-header.bg-success .vitaslimex-plan-price-desc {
+    color: #ffffff;
+  }
+  .vitaslimex-plan-header.bg-info .vitaslimex-plan-subtitle,
+  .vitaslimex-plan-header.bg-info .vitaslimex-plan-price-desc {
+    color: #ffffff;
+  }
+  .vitaslimex-plan-header.bg-warning .vitaslimex-plan-subtitle,
+  .vitaslimex-plan-header.bg-warning .vitaslimex-plan-price-desc {
+    color: #fffacc;
+  }
+  .vitaslimex-plan-header.bg-danger .vitaslimex-plan-subtitle,
+  .vitaslimex-plan-header.bg-danger .vitaslimex-plan-price-desc {
+    color: #ffffff;
+  }
+  /* Scroll to top button*/
+  .scrollToTop_wraper {
+    display: none;
+  }
+  .form-control {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .form-control > .vitaslimex-iconfont {
+    font-size: 1.75rem;
+  }
+  .form-control:hover,
+  .form-control:focus {
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px 0px, rgba(0, 0, 0, 0.07) 0px 1px 3px 0px, rgba(0, 0, 0, 0.03) 0px 0px 0px 1px;
+    border-color: #6592e6 !important;
+  }
+  .form-control:-webkit-input-placeholder {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  .form-control:-webkit-input-placeholder > .vitaslimex-iconfont {
+    font-size: 1.75rem;
+  }
+  blockquote {
+    border-color: #6592e6;
+  }
+  /* Forms */
+  .vitaslimex-form .input-group-btn a.btn {
+    border-radius: 100px !important;
+  }
+  .vitaslimex-form .input-group-btn a.btn:hover {
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+  }
+  .vitaslimex-form .input-group-btn button[type="submit"] {
+    border-radius: 100px !important;
+    padding: 1rem 3rem;
+  }
+  .vitaslimex-form .input-group-btn button[type="submit"]:hover {
+    box-shadow: 0 10px 40px 0 rgba(0, 0, 0, 0.2);
+  }
+  .jq-selectbox li:hover,
+  .jq-selectbox li.selected {
+    background-color: #6592e6;
+    color: #ffffff;
+  }
+  .jq-number__spin {
+    transition: 0.25s ease;
+  }
+  .jq-number__spin:hover {
+    border-color: #6592e6;
+  }
+  .jq-selectbox .jq-selectbox__trigger-arrow,
+  .jq-number__spin.minus:after,
+  .jq-number__spin.plus:after {
+    transition: 0.4s;
+    border-top-color: #353535;
+    border-bottom-color: #353535;
+  }
+  .jq-selectbox:hover .jq-selectbox__trigger-arrow,
+  .jq-number__spin.minus:hover:after,
+  .jq-number__spin.plus:hover:after {
+    border-top-color: #6592e6;
+    border-bottom-color: #6592e6;
+  }
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
+  .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
+    color: #ffffff !important;
+    background-color: #6592e6 !important;
+    box-shadow: none !important;
+  }
+  .xdsoft_datetimepicker .xdsoft_calendar td:hover,
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
+    color: #ffffff !important;
+    background: #fd305c !important;
+    box-shadow: none !important;
+  }
+  .lazy-bg {
+    background-image: none !important;
+  }
+  .lazy-placeholder:not(section),
+  .lazy-none {
+    display: block;
+    position: relative;
+    padding-bottom: 56.25%;
+    width: 100%;
+    height: auto;
+  }
+  iframe.lazy-placeholder,
+  .lazy-placeholder:after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: transparent no-repeat center;
+    background-size: contain;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='32' height='32' viewBox='0 0 64 64' xmlns='http://www.w3.org/2000/svg' stroke='%236592e6' %3e%3cg fill='none' fill-rule='evenodd'%3e%3cg transform='translate(16 16)' stroke-width='2'%3e%3ccircle stroke-opacity='.5' cx='16' cy='16' r='16'/%3e%3cpath d='M32 16c0-9.94-8.06-16-16-16'%3e%3canimateTransform attributeName='transform' type='rotate' from='0 16 16' to='360 16 16' dur='1s' repeatCount='indefinite'/%3e%3c/path%3e%3c/g%3e%3c/g%3e%3c/svg%3e");
+  }
+  section.lazy-placeholder:after {
+    opacity: 0.5;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  a {
+    transition: color 0.6s;
+  }
+  .vitaslimex-menu-section {
+    z-index: 1000;
+    width: 100%;
+  }
+  .vitaslimex-menu-section nav.vitaslimex-navbar {
+    position: fixed;
+  }
+  .vitaslimex-menu-section .dropdown-item:before {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    content: "\e966";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-menu-section .dropdown-menu {
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .vitaslimex-menu-section .dropdown-item {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .vitaslimex-menu-section .dropdown-item:hover,
+  .vitaslimex-menu-section .dropdown-item:focus {
+    background: #6592e6 !important;
+    color: white !important;
+  }
+  .vitaslimex-menu-section .dropdown-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .vitaslimex-menu-section .dropdown-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link {
+    padding: 0 0.3em !important;
+    margin: 0.667em 1em !important;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .vitaslimex-menu-section .nav-link {
+    position: relative;
+  }
+  .vitaslimex-menu-section .vitaslimex-container {
+    display: flex;
+    margin: auto;
+  }
+  .vitaslimex-menu-section .iconfont-wrapper {
+    color: #000000 !important;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .vitaslimex-menu-section .dropdown-menu,
+  .vitaslimex-menu-section .vitaslimex-navbar.opened {
+    background: #182D56 !important;
+  }
+  .vitaslimex-menu-section .nav-item:focus,
+  .vitaslimex-menu-section .nav-link:focus {
+    outline: none;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item {
+    width: auto;
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item::after {
+    right: 0.5rem;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont {
+    margin-right: 0.5rem;
+    vertical-align: sub;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont:before {
+    display: inline-block;
+    transform: scale(1, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-menu-section .collapsed .dropdown-menu .dropdown-item:before {
+    display: none;
+  }
+  .vitaslimex-menu-section .collapsed .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.235em 1.5em 0.235em 1.5em !important;
+    transition: none;
+    margin: 0 !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar {
+    min-height: 70px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    background: #182D56;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.opened {
+    transition: all 0.3s;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .dropdown-item {
+    padding: 0.5rem 1.8rem;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-logo img {
+    width: auto;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-collapse {
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed {
+    justify-content: center;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .nav-item .nav-link::before {
+    display: none;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed.opened .dropdown-menu {
+    top: 0;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 41%;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed ul.vitaslimex-navbar-nav li {
+    margin: auto;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .icons-menu {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-menu-section .vitaslimex-navbar .nav-item .nav-link::before {
+      display: none;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar.opened .dropdown-menu {
+      top: 0;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-submenu {
+      left: 0 !important;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-item:after {
+      right: auto;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+      margin-left: 0.5rem;
+      margin-top: 0.2rem;
+      border-top: 0.35em solid;
+      border-right: 0.35em solid transparent;
+      border-left: 0.35em solid transparent;
+      border-bottom: 0;
+      top: 40%;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-logo img {
+      height: 3rem !important;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar ul.vitaslimex-navbar-nav li {
+      margin: auto;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-item {
+      padding: 0.25rem 1.5rem !important;
+      text-align: center;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-brand {
+      flex-shrink: initial;
+      flex-basis: auto;
+      word-break: break-word;
+      padding-right: 2rem;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-toggler {
+      flex-basis: auto;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .icons-menu {
+      padding-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-short {
+    min-height: 60px;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-logo img {
+    height: 2.5rem !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-brand {
+    min-height: 60px;
+    padding: 0;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-brand {
+    min-height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    word-break: break-word;
+    z-index: 1;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-brand .vitaslimex-caption {
+    line-height: inherit !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-brand .vitaslimex-navbar-logo a {
+    outline: none;
+  }
+  .vitaslimex-menu-section .dropdown-item.active,
+  .vitaslimex-menu-section .dropdown-item:active {
+    background-color: transparent;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-expand-lg .vitaslimex-navbar-nav .nav-link {
+    padding: 0;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link.dropdown-toggle {
+    margin-right: 1.667em;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+    margin-right: 0;
+    padding: 0.667em 1.667em;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu {
+    background: #182D56;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+    margin: 0;
+    left: 100%;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .dropdown.open > .dropdown-menu {
+    display: block;
+  }
+  .vitaslimex-menu-section ul.vitaslimex-navbar-nav {
+    flex-wrap: wrap;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-buttons {
+    text-align: center;
+    min-width: 170px;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler {
+    outline: none;
+    width: 31px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    align-self: center;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px;
+    background-color: #ffffff;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(1) {
+    top: 0;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(2) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(3) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(4) {
+    top: 16px;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(1) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(4) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-dropdown {
+    padding: 0 1rem;
+    position: fixed;
+  }
+  .vitaslimex-menu-section a.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vitaslimex-menu-section .icons-menu {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .vitaslimex-menu-section .vitaslimex-navbar {
+      height: 70px;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar.opened {
+      height: auto;
+    }
+    .vitaslimex-menu-section .nav-item .nav-link:hover::before {
+      width: 175%;
+      max-width: calc(100% + 2rem);
+      left: -1rem;
+    }
+  }
+  .vitaslimex-top-section {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+    background-color: #ffffff;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-top-section .vitaslimex-image-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-top-section .vitaslimex-image-wrap img {
+    width: 100%;
+    object-fit: cover;
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-top-section .vitaslimex-text-wrap {
+      padding: 0 2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .vitaslimex-top-section .vitaslimex-text-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-top-section .vitaslimex-text,
+  .vitaslimex-top-section .vitaslimex-section-btn {
+    color: #353535;
+  }
+  .vitaslimex-choose-title {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-choose-title .vitaslimex-section-title {
+    color: #ffffff;
+  }
+  .vitaslimex-usa-section {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-usa-section img,
+  .vitaslimex-usa-section .item-img {
+    width: 100%;
+  }
+  .vitaslimex-usa-section .item:focus,
+  .vitaslimex-usa-section span:focus {
+    outline: none;
+  }
+  .vitaslimex-usa-section .item {
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  .vitaslimex-usa-section .vitaslimex-item-wrap {
+    position: relative;
+    border-radius: 4px;
+    background: #fafafa;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-usa-section .vitaslimex-item-wrap .item-content {
+      padding: 2rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-usa-section .vitaslimex-item-wrap .item-content {
+      padding: 1rem;
+    }
+  }
+  .vitaslimex-usa-section .vitaslimex-section-btn {
+    margin-top: auto !important;
+  }
+  .vitaslimex-usa-section .vitaslimex-section-title {
+    color: #232323;
+  }
+  .vitaslimex-usa-section .vitaslimex-text,
+  .vitaslimex-usa-section .vitaslimex-section-btn {
+    text-align: center;
+  }
+  .vitaslimex-usa-section .item-title {
+    text-align: center;
+  }
+  .vitaslimex-usa-section .item-subtitle {
+    text-align: center;
+  }
+  .vitaslimex-reviews-section {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-reviews-section .vitaslimex-section-title {
+    color: #ffffff;
+  }
+  .vitaslimex-reviews-one {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #fafafa;
+  }
+  .vitaslimex-reviews-one .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-reviews-one .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-reviews-one .item:not(:nth-last-child(1)) {
+    margin-bottom: 2rem;
+  }
+  .vitaslimex-reviews-one .vitaslimex-item-wrap {
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  .vitaslimex-reviews-one .vitaslimex-image-wrap img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .vitaslimex-reviews-one .social-row .soc-item {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #6592e6;
+    transition: all 0.3s;
+  }
+  .vitaslimex-reviews-one .social-row .soc-item .vitaslimex-iconfont {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #6592e6;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+  .vitaslimex-reviews-one .social-row .soc-item:hover {
+    background-color: #6592e6;
+  }
+  .vitaslimex-reviews-one .social-row .soc-item:hover .vitaslimex-iconfont {
+    color: #ffffff;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-reviews-one .card-box {
+      padding: 1rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .vitaslimex-reviews-one .card-box {
+      padding-right: 2rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-reviews-one .card-box {
+      padding-left: 2rem;
+      padding-right: 4rem;
+    }
+  }
+  .vitaslimex-reviews-one .card-subtitle {
+    color: #000d98;
+  }
+  .vitaslimex-order-section {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    background-color: #EEF3F6;
+  }
+  .vitaslimex-order-section .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-order-section .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-order-section .vitaslimex-image-wrap {
+      margin-bottom: 1rem;
+    }
+  }
+  .vitaslimex-order-section .row {
+    flex-direction: row-reverse;
+  }
+  .vitaslimex-order-section img {
+    width: 100%;
+  }
+  .vitaslimex-order-choice {
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    background-color: #EEF3F6;
+  }
+  .vitaslimex-order-choice img,
+  .vitaslimex-order-choice .item-img {
+    width: 100%;
+  }
+  .vitaslimex-order-choice .item:focus,
+  .vitaslimex-order-choice span:focus {
+    outline: none;
+  }
+  .vitaslimex-order-choice .item {
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+  .vitaslimex-order-choice .vitaslimex-item-wrap {
+    position: relative;
+    border-radius: 4px;
+    background: #f0f0f0;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-order-choice .vitaslimex-item-wrap .item-content {
+      padding: 2rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-order-choice .vitaslimex-item-wrap .item-content {
+      padding: 1rem;
+    }
+  }
+  .vitaslimex-order-choice .vitaslimex-section-btn {
+    margin-top: auto !important;
+  }
+  .vitaslimex-order-choice .vitaslimex-section-title {
+    color: #232323;
+  }
+  .vitaslimex-order-choice .vitaslimex-text,
+  .vitaslimex-order-choice .vitaslimex-section-btn {
+    text-align: left;
+  }
+  .vitaslimex-order-choice .item-title {
+    text-align: left;
+  }
+  .vitaslimex-order-choice .item-subtitle {
+    text-align: center;
+  }
+  .vitaslimex-what-is-section {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-what-is-section .vitaslimex-section-title {
+    color: #ffffff;
+  }
+  .vitaslimex-what-is-content {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #ffffff;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-what-is-content .vitaslimex-image-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-what-is-content .vitaslimex-image-wrap img {
+    width: 100%;
+    object-fit: cover;
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-what-is-content .vitaslimex-text-wrap {
+      padding: 0 2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .vitaslimex-what-is-content .vitaslimex-text-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-what-is-content .vitaslimex-text,
+  .vitaslimex-what-is-content .vitaslimex-section-btn {
+    color: #000000;
+  }
+  .vitaslimex-works-section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #f7f7f7;
+  }
+  .vitaslimex-works-section .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-works-section .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-works-section .vitaslimex-section-title {
+    color: #182D56;
+  }
+  .color-change {
+    color: #182D56;
+  }
+  .vitaslimex-works-section .vitaslimex-section-subtitle {
+    text-align: left;
+  }
+  .vitaslimex-advantage-section {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-advantage-section .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-advantage-section .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-advantage-section .vitaslimex-section-title {
+    color: #182D56;
+  }
+  .vitaslimex-advantage-content {
+    padding-top: 0rem;
+    padding-bottom: 4rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-advantage-content .vitaslimex-counter-container ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 2.5rem;
+  }
+  .vitaslimex-advantage-content .vitaslimex-counter-container ul li {
+    margin-bottom: 1rem;
+    list-style: none;
+    position: relative;
+    padding-left: 1rem;
+  }
+  .vitaslimex-advantage-content .vitaslimex-counter-container ul li:before {
+    position: absolute;
+    left: -40px;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #0073af;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    content: "✓";
+  }
+  .vitaslimex-order-section-two {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-order-section-two .vitaslimex-section-title {
+    color: #ffffff;
+  }
+  .vitaslimex-enus-cid {
+    padding-top: 3rem;
+    padding-bottom: 0rem;
+    background: #EEF3F6;
+  }
+  .vitaslimex-enus-cid .team-card {
+    margin-bottom: 2rem;
+    transition: all 0.3s;
+  }
+  .vitaslimex-enus-cid .team-card:hover {
+    transform: translateY(-10px);
+  }
+  .vitaslimex-enus-cid .card-wrap {
+    background: #EEF3F6;
+    border-radius: 4px;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-enus-cid .card-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-enus-cid .card-wrap .image-wrap img {
+    width: 100%;
+  }
+  @media (min-width: 768px) {
+    .vitaslimex-enus-cid .card-wrap .content-wrap {
+      padding: 2rem;
+    }
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-enus-cid .card-wrap .content-wrap {
+      padding: 1rem;
+    }
+  }
+  .vitaslimex-enus-cid .social-row {
+    text-align: center;
+  }
+  .vitaslimex-enus-cid .social-row .soc-item {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #6592e6;
+    transition: all 0.3s;
+  }
+  .vitaslimex-enus-cid .social-row .soc-item .vitaslimex-iconfont {
+    transition: all 0.3s;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #6592e6;
+    font-size: 1.5rem;
+  }
+  .vitaslimex-enus-cid .social-row .soc-item:hover {
+    background-color: #6592e6;
+  }
+  .vitaslimex-enus-cid .social-row .soc-item:hover .vitaslimex-iconfont {
+    color: #ffffff;
+  }
+  .vitaslimex-enus-cid .vitaslimex-section-title {
+    color: #000000;
+  }
+  .vitaslimex-enus-cid .vitaslimex-section-title1 {
+    color: #000000;
+  }
+  .vitaslimex-cid-css-one {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-cid-css-one .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-cid-css-one .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-cid-css-one .vitaslimex-section-title {
+    color: #ffffff;
+  }
+  .vitaslimex-css-one {
+    padding-top: 0rem;
+    padding-bottom: 3rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-css-one .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-css-one .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-css-one .item:not(:nth-last-child(1)) {
+    margin-bottom: 2rem;
+  }
+  .vitaslimex-css-one .vitaslimex-item-wrap {
+    background-color: #ffffff;
+    border-radius: 4px;
+  }
+  .vitaslimex-css-one .vitaslimex-image-wrap img {
+    width: 100%;
+    object-fit: cover;
+  }
+  .vitaslimex-css-one .social-row .soc-item {
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 2px solid #6592e6;
+    transition: all 0.3s;
+  }
+  .vitaslimex-css-one .social-row .soc-item .vitaslimex-iconfont {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    color: #6592e6;
+    font-size: 1.5rem;
+    transition: all 0.3s;
+  }
+  .vitaslimex-css-one .social-row .soc-item:hover {
+    background-color: #6592e6;
+  }
+  .vitaslimex-css-one .social-row .soc-item:hover .vitaslimex-iconfont {
+    color: #ffffff;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-css-one .card-box {
+      padding: 1rem;
+    }
+  }
+  @media (min-width: 768px) {
+    .vitaslimex-css-one .card-box {
+      padding-right: 2rem;
+    }
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-css-one .card-box {
+      padding-left: 2rem;
+      padding-right: 4rem;
+    }
+  }
+  .vitaslimex-css-one .card-subtitle {
+    color: #182D56;
+  }
+  .vitaslimex-ingredients-section {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-ingredients-section .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-ingredients-section .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-ingredients-section .vitaslimex-section-title {
+    color: #182D56;
+  }
+  .vitaslimex-ingredients-content {
+    padding-top: 0rem;
+    padding-bottom: 2rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-ingredients-content .vitaslimex-counter-container ol {
+    margin-bottom: 0;
+    counter-reset: myCounter;
+  }
+  .vitaslimex-ingredients-content .vitaslimex-counter-container ol li {
+    margin-bottom: 1rem;
+  }
+  .vitaslimex-ingredients-content .vitaslimex-counter-container ol li {
+    list-style: none;
+    padding-left: 1rem;
+    position: relative;
+  }
+  .vitaslimex-ingredients-content .vitaslimex-counter-container ol li:before {
+    position: absolute;
+    left: -40px;
+    margin-top: 5px;
+    counter-increment: myCounter;
+    content: counter(myCounter);
+    line-height: 40px;
+    transition: all .2s;
+    color: #ffffff;
+    background: #182D56;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vitaslimex-quality-section {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #fafafa;
+  }
+  .vitaslimex-quality-section img,
+  .vitaslimex-quality-section .item-img {
+    width: 100%;
+  }
+  .vitaslimex-quality-section .item:focus,
+  .vitaslimex-quality-section span:focus {
+    outline: none;
+  }
+  .vitaslimex-quality-section .item {
+    cursor: pointer;
+    margin-bottom: 2rem;
+    position: relative;
+  }
+  .vitaslimex-quality-section .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .vitaslimex-quality-section .item {
+    padding: 0;
+    margin: 0;
+  }
+  .vitaslimex-quality-section .vitaslimex-item-wrap {
+    position: unset;
+    border-radius: 4px;
+    background: #fafafa;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-quality-section .vitaslimex-item-wrap .item-content {
+      padding: 2rem;
+    }
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-quality-section .vitaslimex-item-wrap .item-content {
+      padding: 1rem;
+    }
+  }
+  .vitaslimex-quality-section .vitaslimex-section-btn {
+    margin-top: auto !important;
+  }
+  .vitaslimex-quality-section .vitaslimex-section-title {
+    color: #232323;
+  }
+  .vitaslimex-quality-section .vitaslimex-section-subtitle {
+    text-align: center;
+  }
+  .vitaslimex-proven-section {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-proven-section .item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .vitaslimex-proven-section .item .icon-wrap {
+    text-align: center;
+  }
+  .vitaslimex-proven-section .item span {
+    font-size: 2rem;
+    color: #ffffff;
+    line-height: 60px;
+  }
+  .vitaslimex-proven-section .item::before {
+    content: "➔"; /* Replace broken icon with real arrow */
+    font-family: inherit !important; /* Use normal text font */
+    position: absolute;
+    font-size: 32px;
+    left: -15px;
+    top: 12%;
+    color: #182D56; /* Your theme green */
+  }  
+  .vitaslimex-proven-section .item.first:before {
+    display: none;
+  }
+  .vitaslimex-proven-section .item.five:before {
+    display: none;
+  }
+  .vitaslimex-proven-section .icon-box {
+    background: #182D56;
+    width: 60px;
+    min-width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+  }
+  .vitaslimex-proven-section .text-box {
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .vitaslimex-proven-section .vitaslimex-iconfont {
+    color: #6592e6 !important;
+    position: absolute;
+    top: 50%;
+    left: 100%;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-proven-section .item:before {
+      display: none;
+    }
+    .vitaslimex-proven-section .card-wrapper {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-benefits-section {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-benefits-section .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-benefits-section .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-benefits-section .vitaslimex-section-title {
+    color: #ffffff;
+  }
+  .vitaslimex-benefits-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-benefits-content .vitaslimex-counter-container ul {
+    margin: 0;
+    list-style: none;
+    padding-left: 2.5rem;
+  }
+  .vitaslimex-benefits-content .vitaslimex-counter-container ul li {
+    margin-bottom: 1rem;
+    list-style: none;
+    position: relative;
+    padding-left: 1rem;
+  }
+  .vitaslimex-benefits-content .vitaslimex-counter-container ul li:before {
+    position: absolute;
+    left: -40px;
+    content: "";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background-color: #182D56;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 5px;
+    content: "✓";
+  }
+  .vitaslimex-moneyback-guarantee-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #fafafa;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-moneyback-guarantee-section .vitaslimex-image-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-moneyback-guarantee-section .vitaslimex-image-wrap img {
+    width: 100%;
+    object-fit: cover;
+  }
+  @media (min-width: 992px) {
+    .vitaslimex-moneyback-guarantee-section .vitaslimex-text-wrap {
+      padding: 0 2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .vitaslimex-moneyback-guarantee-section .vitaslimex-text-wrap {
+      margin-bottom: 2rem;
+    }
+  }
+  .vitaslimex-moneyback-guarantee-section .vitaslimex-text,
+  .vitaslimex-moneyback-guarantee-section .vitaslimex-section-btn {
+    color: #000000;
+  }
+  .vitaslimex-moneyback-guarantee-section .vitaslimex-section-title {
+    color: #182D56;
+  }
+  .vitaslimex-faqs-section {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-faqs-section .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-faqs-section .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-faqs-section .card .card-header {
+    background-color: transparent;
+    margin-bottom: 0;
+  }
+  .vitaslimex-faqs-section .vitaslimex-faq-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .vitaslimex-faqs-section .vitaslimex-iconfont {
+    padding-left: 1rem;
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    font-size: 1.4rem !important;
+    color: #6592e6;
+  }
+  .vitaslimex-faqs-section .vitaslimex-faq-body,
+  .vitaslimex-faqs-section .card-header {
+    padding: 1rem 0;
+  }
+  .vitaslimex-faqs-section .vitaslimex-faq-title-edit {
+    color: #000000;
+  }
+  .vitaslimex-faqs-section H3 {
+    color: #182D56;
+  }
+  .vitaslimex-special-deal-section {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-special-deal-section .vitaslimex-section-title {
+    color: #ffffff;
+  }
+  .vitaslimex-deal-content-one {
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-deal-content-one .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-deal-content-one .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-deal-content-one .vitaslimex-image-wrap {
+      margin-bottom: 1rem;
+    }
+  }
+  .vitaslimex-deal-content-one .row {
+    flex-direction: row-reverse;
+  }
+  .vitaslimex-deal-content-one img {
+    width: 100%;
+  }
+  .vitaslimex-css-two {
+    padding-top: 2rem;
+    padding-bottom: 10rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-pages-section {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    background-color: #182D56;
+  }
+  .vitaslimex-pages-section .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-pages-section .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-pages-section ul {
+    list-style: none;
+    margin: 0;
+    padding-left: 2.5rem;
+  }
+  .vitaslimex-pages-section li {
+    position: relative;
+    margin-bottom: 1rem;
+  }
+  .vitaslimex-pages-section ul li::before {
+    position: absolute;
+    left: -1.6rem;
+    content: "\2022";
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 2rem;
+    width: 1.6rem;
+  }
+  .vitaslimex-pages-section .list {
+    color: #ffffff;
+  }
+  .vitaslimex-footer-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #353535;
+  }
+  .vitaslimex-footer-section .row-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-footer-section .social-row {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-footer-section .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vitaslimex-footer-section .row .foot-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .vitaslimex-footer-section .row .foot-menu li {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .vitaslimex-footer-section .row .foot-menu li p {
+    margin: 0;
+  }
+  .vitaslimex-footer-section .row .social-list {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .vitaslimex-footer-section .row .social-list .vitaslimex-iconfont-social {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .vitaslimex-footer-section .row .social-list .soc-item {
+    margin: 0 .5rem;
+  }
+  .vitaslimex-footer-section .row .social-list a {
+    margin: 0;
+    opacity: .5;
+    transition: .2s linear;
+  }
+  .vitaslimex-footer-section .row .social-list a:hover {
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-footer-section .row .social-list {
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  }
+  .vitaslimex-footer-section .row .row-copirayt {
+    word-break: break-word;
+    width: 100%;
+  }
+  .vitaslimex-footer-section .row .row-copirayt p {
+    width: 100%;
+  }
+  .vitaslimex-footer-section .row .vitaslimex-text {
+    text-align: center;
+  }
+  .vitaslimex-menu-section {
+    z-index: 1000;
+    width: 100%;
+  }
+  .vitaslimex-menu-section nav.vitaslimex-navbar {
+    position: fixed;
+  }
+  .vitaslimex-menu-section .dropdown-item:before {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    content: "\e966";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-menu-section .dropdown-menu {
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .vitaslimex-menu-section .dropdown-item {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .vitaslimex-menu-section .dropdown-item:hover,
+  .vitaslimex-menu-section .dropdown-item:focus {
+    background: #6592e6 !important;
+    color: white !important;
+  }
+  .vitaslimex-menu-section .dropdown-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .vitaslimex-menu-section .dropdown-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link {
+    padding: 0 0.3em !important;
+    margin: 0.667em 1em !important;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .vitaslimex-menu-section .nav-link {
+    position: relative;
+  }
+  .vitaslimex-menu-section .vitaslimex-container {
+    display: flex;
+    margin: auto;
+  }
+  .vitaslimex-menu-section .iconfont-wrapper {
+    color: #000000 !important;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .vitaslimex-menu-section .dropdown-menu,
+  .vitaslimex-menu-section .vitaslimex-navbar.opened {
+    background: #182D56 !important;
+  }
+  .vitaslimex-menu-section .nav-item:focus,
+  .vitaslimex-menu-section .nav-link:focus {
+    outline: none;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item {
+    width: auto;
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item::after {
+    right: 0.5rem;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont {
+    margin-right: 0.5rem;
+    vertical-align: sub;
+  }
+  .vitaslimex-menu-section .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont:before {
+    display: inline-block;
+    transform: scale(1, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-menu-section .collapsed .dropdown-menu .dropdown-item:before {
+    display: none;
+  }
+  .vitaslimex-menu-section .collapsed .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.235em 1.5em 0.235em 1.5em !important;
+    transition: none;
+    margin: 0 !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar {
+    min-height: 70px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    background: #182D56;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.opened {
+    transition: all 0.3s;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .dropdown-item {
+    padding: 0.5rem 1.8rem;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-logo img {
+    width: auto;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-collapse {
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed {
+    justify-content: center;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .nav-item .nav-link::before {
+    display: none;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed.opened .dropdown-menu {
+    top: 0;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 41%;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed ul.vitaslimex-navbar-nav li {
+    margin: auto;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.collapsed .icons-menu {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-menu-section .vitaslimex-navbar .nav-item .nav-link::before {
+      display: none;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar.opened .dropdown-menu {
+      top: 0;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-submenu {
+      left: 0 !important;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-item:after {
+      right: auto;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+      margin-left: 0.5rem;
+      margin-top: 0.2rem;
+      border-top: 0.35em solid;
+      border-right: 0.35em solid transparent;
+      border-left: 0.35em solid transparent;
+      border-bottom: 0;
+      top: 40%;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-logo img {
+      height: 3rem !important;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar ul.vitaslimex-navbar-nav li {
+      margin: auto;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .dropdown-menu .dropdown-item {
+      padding: 0.25rem 1.5rem !important;
+      text-align: center;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-brand {
+      flex-shrink: initial;
+      flex-basis: auto;
+      word-break: break-word;
+      padding-right: 2rem;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .vitaslimex-navbar-toggler {
+      flex-basis: auto;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar .icons-menu {
+      padding-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-short {
+    min-height: 60px;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-logo img {
+    height: 2.5rem !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-brand {
+    min-height: 60px;
+    padding: 0;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-brand {
+    min-height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    word-break: break-word;
+    z-index: 1;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-brand .vitaslimex-caption {
+    line-height: inherit !important;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-brand .vitaslimex-navbar-logo a {
+    outline: none;
+  }
+  .vitaslimex-menu-section .dropdown-item.active,
+  .vitaslimex-menu-section .dropdown-item:active {
+    background-color: transparent;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-expand-lg .vitaslimex-navbar-nav .nav-link {
+    padding: 0;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link.dropdown-toggle {
+    margin-right: 1.667em;
+  }
+  .vitaslimex-menu-section .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+    margin-right: 0;
+    padding: 0.667em 1.667em;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu {
+    background: #182D56;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+    margin: 0;
+    left: 100%;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar .dropdown.open > .dropdown-menu {
+    display: block;
+  }
+  .vitaslimex-menu-section ul.vitaslimex-navbar-nav {
+    flex-wrap: wrap;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-buttons {
+    text-align: center;
+    min-width: 170px;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler {
+    outline: none;
+    width: 31px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    align-self: center;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px;
+    background-color: #ffffff;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(1) {
+    top: 0;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(2) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(3) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-menu-section button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(4) {
+    top: 16px;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(1) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-menu-section nav.opened .vitaslimex-hamburger span:nth-child(4) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-menu-section .vitaslimex-navbar-dropdown {
+    padding: 0 1rem;
+    position: fixed;
+  }
+  .vitaslimex-menu-section a.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vitaslimex-menu-section .icons-menu {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .vitaslimex-menu-section .vitaslimex-navbar {
+      height: 70px;
+    }
+    .vitaslimex-menu-section .vitaslimex-navbar.opened {
+      height: auto;
+    }
+    .vitaslimex-menu-section .nav-item .nav-link:hover::before {
+      width: 175%;
+      max-width: calc(100% + 2rem);
+      left: -1rem;
+    }
+  }
+  .vitaslimex-css-three {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-three .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-css-three .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-css-three .vitaslimex-section-title {
+    text-align: left;
+  }
+  .vitaslimex-css-three .vitaslimex-section-subtitle {
+    text-align: left;
+  }
+  .vitaslimex-footer-section {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #353535;
+  }
+  .vitaslimex-footer-section .row-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-footer-section .social-row {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-footer-section .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vitaslimex-footer-section .row .foot-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .vitaslimex-footer-section .row .foot-menu li {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .vitaslimex-footer-section .row .foot-menu li p {
+    margin: 0;
+  }
+  .vitaslimex-footer-section .row .social-list {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .vitaslimex-footer-section .row .social-list .vitaslimex-iconfont-social {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .vitaslimex-footer-section .row .social-list .soc-item {
+    margin: 0 .5rem;
+  }
+  .vitaslimex-footer-section .row .social-list a {
+    margin: 0;
+    opacity: .5;
+    transition: .2s linear;
+  }
+  .vitaslimex-footer-section .row .social-list a:hover {
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-footer-section .row .social-list {
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  }
+  .vitaslimex-footer-section .row .row-copirayt {
+    word-break: break-word;
+    width: 100%;
+  }
+  .vitaslimex-footer-section .row .row-copirayt p {
+    width: 100%;
+  }
+  .vitaslimex-footer-section .row .vitaslimex-text {
+    text-align: center;
+  }
+  .vitaslimex-enus {
+    z-index: 1000;
+    width: 100%;
+  }
+  .vitaslimex-enus nav.vitaslimex-navbar {
+    position: fixed;
+  }
+  .vitaslimex-enus .dropdown-item:before {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    content: "\e966";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-enus .dropdown-menu {
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .vitaslimex-enus .dropdown-item {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .vitaslimex-enus .dropdown-item:hover,
+  .vitaslimex-enus .dropdown-item:focus {
+    background: #6592e6 !important;
+    color: white !important;
+  }
+  .vitaslimex-enus .dropdown-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .vitaslimex-enus .dropdown-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .vitaslimex-enus .nav-dropdown .link {
+    padding: 0 0.3em !important;
+    margin: 0.667em 1em !important;
+  }
+  .vitaslimex-enus .nav-dropdown .link.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .vitaslimex-enus .nav-link {
+    position: relative;
+  }
+  .vitaslimex-enus .vitaslimex-container {
+    display: flex;
+    margin: auto;
+  }
+  .vitaslimex-enus .iconfont-wrapper {
+    color: #000000 !important;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .vitaslimex-enus .dropdown-menu,
+  .vitaslimex-enus .vitaslimex-navbar.opened {
+    background: #182D56 !important;
+  }
+  .vitaslimex-enus .nav-item:focus,
+  .vitaslimex-enus .nav-link:focus {
+    outline: none;
+  }
+  .vitaslimex-enus .dropdown .dropdown-menu .dropdown-item {
+    width: auto;
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-enus .dropdown .dropdown-menu .dropdown-item::after {
+    right: 0.5rem;
+  }
+  .vitaslimex-enus .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont {
+    margin-right: 0.5rem;
+    vertical-align: sub;
+  }
+  .vitaslimex-enus .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont:before {
+    display: inline-block;
+    transform: scale(1, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-enus .collapsed .dropdown-menu .dropdown-item:before {
+    display: none;
+  }
+  .vitaslimex-enus .collapsed .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.235em 1.5em 0.235em 1.5em !important;
+    transition: none;
+    margin: 0 !important;
+  }
+  .vitaslimex-enus .vitaslimex-navbar {
+    min-height: 70px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    background: #182D56;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.opened {
+    transition: all 0.3s;
+  }
+  .vitaslimex-enus .vitaslimex-navbar .dropdown-item {
+    padding: 0.5rem 1.8rem;
+  }
+  .vitaslimex-enus .vitaslimex-navbar .vitaslimex-navbar-logo img {
+    width: auto;
+  }
+  .vitaslimex-enus .vitaslimex-navbar .vitaslimex-navbar-collapse {
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed {
+    justify-content: center;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed .nav-item .nav-link::before {
+    display: none;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed.opened .dropdown-menu {
+    top: 0;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 41%;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed ul.vitaslimex-navbar-nav li {
+    margin: auto;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.collapsed .icons-menu {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-enus .vitaslimex-navbar .nav-item .nav-link::before {
+      display: none;
+    }
+    .vitaslimex-enus .vitaslimex-navbar.opened .dropdown-menu {
+      top: 0;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .dropdown-menu .dropdown-submenu {
+      left: 0 !important;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .dropdown-menu .dropdown-item:after {
+      right: auto;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+      margin-left: 0.5rem;
+      margin-top: 0.2rem;
+      border-top: 0.35em solid;
+      border-right: 0.35em solid transparent;
+      border-left: 0.35em solid transparent;
+      border-bottom: 0;
+      top: 40%;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .vitaslimex-navbar-logo img {
+      height: 3rem !important;
+    }
+    .vitaslimex-enus .vitaslimex-navbar ul.vitaslimex-navbar-nav li {
+      margin: auto;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .dropdown-menu .dropdown-item {
+      padding: 0.25rem 1.5rem !important;
+      text-align: center;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .vitaslimex-navbar-brand {
+      flex-shrink: initial;
+      flex-basis: auto;
+      word-break: break-word;
+      padding-right: 2rem;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .vitaslimex-navbar-toggler {
+      flex-basis: auto;
+    }
+    .vitaslimex-enus .vitaslimex-navbar .icons-menu {
+      padding-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .vitaslimex-enus .vitaslimex-navbar.vitaslimex-navbar-short {
+    min-height: 60px;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-logo img {
+    height: 2.5rem !important;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-brand {
+    min-height: 60px;
+    padding: 0;
+  }
+  .vitaslimex-enus .vitaslimex-navbar-brand {
+    min-height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    word-break: break-word;
+    z-index: 1;
+  }
+  .vitaslimex-enus .vitaslimex-navbar-brand .vitaslimex-caption {
+    line-height: inherit !important;
+  }
+  .vitaslimex-enus .vitaslimex-navbar-brand .vitaslimex-navbar-logo a {
+    outline: none;
+  }
+  .vitaslimex-enus .dropdown-item.active,
+  .vitaslimex-enus .dropdown-item:active {
+    background-color: transparent;
+  }
+  .vitaslimex-enus .vitaslimex-navbar-expand-lg .vitaslimex-navbar-nav .nav-link {
+    padding: 0;
+  }
+  .vitaslimex-enus .nav-dropdown .link.dropdown-toggle {
+    margin-right: 1.667em;
+  }
+  .vitaslimex-enus .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+    margin-right: 0;
+    padding: 0.667em 1.667em;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu {
+    background: #182D56;
+  }
+  .vitaslimex-enus .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+    margin: 0;
+    left: 100%;
+  }
+  .vitaslimex-enus .vitaslimex-navbar .dropdown.open > .dropdown-menu {
+    display: block;
+  }
+  .vitaslimex-enus ul.vitaslimex-navbar-nav {
+    flex-wrap: wrap;
+  }
+  .vitaslimex-enus .vitaslimex-navbar-buttons {
+    text-align: center;
+    min-width: 170px;
+  }
+  .vitaslimex-enus button.vitaslimex-navbar-toggler {
+    outline: none;
+    width: 31px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    align-self: center;
+  }
+  .vitaslimex-enus button.vitaslimex-navbar-toggler .vitaslimex-hamburger span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px;
+    background-color: #ffffff;
+  }
+  .vitaslimex-enus button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(1) {
+    top: 0;
+    transition: all 0.2s;
+  }
+  .vitaslimex-enus button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(2) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-enus button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(3) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-enus button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(4) {
+    top: 16px;
+    transition: all 0.2s;
+  }
+  .vitaslimex-enus nav.opened .vitaslimex-hamburger span:nth-child(1) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-enus nav.opened .vitaslimex-hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-enus nav.opened .vitaslimex-hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-enus nav.opened .vitaslimex-hamburger span:nth-child(4) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-enus .vitaslimex-navbar-dropdown {
+    padding: 0 1rem;
+    position: fixed;
+  }
+  .vitaslimex-enus a.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vitaslimex-enus .icons-menu {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .vitaslimex-enus .vitaslimex-navbar {
+      height: 70px;
+    }
+    .vitaslimex-enus .vitaslimex-navbar.opened {
+      height: auto;
+    }
+    .vitaslimex-enus .nav-item .nav-link:hover::before {
+      width: 175%;
+      max-width: calc(100% + 2rem);
+      left: -1rem;
+    }
+  }
+  .vitaslimex-css-four {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-four .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-css-four .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-css-four .vitaslimex-section-title {
+    text-align: left;
+  }
+  .vitaslimex-css-four .vitaslimex-section-subtitle {
+    text-align: left;
+  }
+  .vitaslimex-css-five {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #353535;
+  }
+  .vitaslimex-css-five .row-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-five .social-row {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-five .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vitaslimex-css-five .row .foot-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .vitaslimex-css-five .row .foot-menu li {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .vitaslimex-css-five .row .foot-menu li p {
+    margin: 0;
+  }
+  .vitaslimex-css-five .row .social-list {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .vitaslimex-css-five .row .social-list .vitaslimex-iconfont-social {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .vitaslimex-css-five .row .social-list .soc-item {
+    margin: 0 .5rem;
+  }
+  .vitaslimex-css-five .row .social-list a {
+    margin: 0;
+    opacity: .5;
+    transition: .2s linear;
+  }
+  .vitaslimex-css-five .row .social-list a:hover {
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-css-five .row .social-list {
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  }
+  .vitaslimex-css-five .row .row-copirayt {
+    word-break: break-word;
+    width: 100%;
+  }
+  .vitaslimex-css-five .row .row-copirayt p {
+    width: 100%;
+  }
+  .vitaslimex-css-five .row .vitaslimex-text {
+    text-align: center;
+  }
+  .vitaslimex-css-six {
+    z-index: 1000;
+    width: 100%;
+  }
+  .vitaslimex-css-six nav.vitaslimex-navbar {
+    position: fixed;
+  }
+  .vitaslimex-css-six .dropdown-item:before {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    content: "\e966";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-six .dropdown-menu {
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .vitaslimex-css-six .dropdown-item {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .vitaslimex-css-six .dropdown-item:hover,
+  .vitaslimex-css-six .dropdown-item:focus {
+    background: #6592e6 !important;
+    color: white !important;
+  }
+  .vitaslimex-css-six .dropdown-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .vitaslimex-css-six .dropdown-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .vitaslimex-css-six .nav-dropdown .link {
+    padding: 0 0.3em !important;
+    margin: 0.667em 1em !important;
+  }
+  .vitaslimex-css-six .nav-dropdown .link.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .vitaslimex-css-six .nav-link {
+    position: relative;
+  }
+  .vitaslimex-css-six .vitaslimex-container {
+    display: flex;
+    margin: auto;
+  }
+  .vitaslimex-css-six .iconfont-wrapper {
+    color: #000000 !important;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .vitaslimex-css-six .dropdown-menu,
+  .vitaslimex-css-six .vitaslimex-navbar.opened {
+    background: #182D56 !important;
+  }
+  .vitaslimex-css-six .nav-item:focus,
+  .vitaslimex-css-six .nav-link:focus {
+    outline: none;
+  }
+  .vitaslimex-css-six .dropdown .dropdown-menu .dropdown-item {
+    width: auto;
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-six .dropdown .dropdown-menu .dropdown-item::after {
+    right: 0.5rem;
+  }
+  .vitaslimex-css-six .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont {
+    margin-right: 0.5rem;
+    vertical-align: sub;
+  }
+  .vitaslimex-css-six .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont:before {
+    display: inline-block;
+    transform: scale(1, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-six .collapsed .dropdown-menu .dropdown-item:before {
+    display: none;
+  }
+  .vitaslimex-css-six .collapsed .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.235em 1.5em 0.235em 1.5em !important;
+    transition: none;
+    margin: 0 !important;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar {
+    min-height: 70px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    background: #182D56;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.opened {
+    transition: all 0.3s;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar .dropdown-item {
+    padding: 0.5rem 1.8rem;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar .vitaslimex-navbar-logo img {
+    width: auto;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar .vitaslimex-navbar-collapse {
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed {
+    justify-content: center;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed .nav-item .nav-link::before {
+    display: none;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed.opened .dropdown-menu {
+    top: 0;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 41%;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed ul.vitaslimex-navbar-nav li {
+    margin: auto;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.collapsed .icons-menu {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-css-six .vitaslimex-navbar .nav-item .nav-link::before {
+      display: none;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar.opened .dropdown-menu {
+      top: 0;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .dropdown-menu .dropdown-submenu {
+      left: 0 !important;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .dropdown-menu .dropdown-item:after {
+      right: auto;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+      margin-left: 0.5rem;
+      margin-top: 0.2rem;
+      border-top: 0.35em solid;
+      border-right: 0.35em solid transparent;
+      border-left: 0.35em solid transparent;
+      border-bottom: 0;
+      top: 40%;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .vitaslimex-navbar-logo img {
+      height: 3rem !important;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar ul.vitaslimex-navbar-nav li {
+      margin: auto;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .dropdown-menu .dropdown-item {
+      padding: 0.25rem 1.5rem !important;
+      text-align: center;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .vitaslimex-navbar-brand {
+      flex-shrink: initial;
+      flex-basis: auto;
+      word-break: break-word;
+      padding-right: 2rem;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .vitaslimex-navbar-toggler {
+      flex-basis: auto;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar .icons-menu {
+      padding-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.vitaslimex-navbar-short {
+    min-height: 60px;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-logo img {
+    height: 2.5rem !important;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-brand {
+    min-height: 60px;
+    padding: 0;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar-brand {
+    min-height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    word-break: break-word;
+    z-index: 1;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar-brand .vitaslimex-caption {
+    line-height: inherit !important;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar-brand .vitaslimex-navbar-logo a {
+    outline: none;
+  }
+  .vitaslimex-css-six .dropdown-item.active,
+  .vitaslimex-css-six .dropdown-item:active {
+    background-color: transparent;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar-expand-lg .vitaslimex-navbar-nav .nav-link {
+    padding: 0;
+  }
+  .vitaslimex-css-six .nav-dropdown .link.dropdown-toggle {
+    margin-right: 1.667em;
+  }
+  .vitaslimex-css-six .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+    margin-right: 0;
+    padding: 0.667em 1.667em;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu {
+    background: #182D56;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+    margin: 0;
+    left: 100%;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar .dropdown.open > .dropdown-menu {
+    display: block;
+  }
+  .vitaslimex-css-six ul.vitaslimex-navbar-nav {
+    flex-wrap: wrap;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar-buttons {
+    text-align: center;
+    min-width: 170px;
+  }
+  .vitaslimex-css-six button.vitaslimex-navbar-toggler {
+    outline: none;
+    width: 31px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    align-self: center;
+  }
+  .vitaslimex-css-six button.vitaslimex-navbar-toggler .vitaslimex-hamburger span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-six button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(1) {
+    top: 0;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-six button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(2) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-css-six button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(3) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-css-six button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(4) {
+    top: 16px;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-six nav.opened .vitaslimex-hamburger span:nth-child(1) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-six nav.opened .vitaslimex-hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-css-six nav.opened .vitaslimex-hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-css-six nav.opened .vitaslimex-hamburger span:nth-child(4) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-six .vitaslimex-navbar-dropdown {
+    padding: 0 1rem;
+    position: fixed;
+  }
+  .vitaslimex-css-six a.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vitaslimex-css-six .icons-menu {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .vitaslimex-css-six .vitaslimex-navbar {
+      height: 70px;
+    }
+    .vitaslimex-css-six .vitaslimex-navbar.opened {
+      height: auto;
+    }
+    .vitaslimex-css-six .nav-item .nav-link:hover::before {
+      width: 175%;
+      max-width: calc(100% + 2rem);
+      left: -1rem;
+    }
+  }
+  .vitaslimex-css-seven {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-seven .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-css-seven .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-css-seven .vitaslimex-section-title {
+    text-align: left;
+  }
+  .vitaslimex-css-seven .vitaslimex-section-subtitle {
+    text-align: left;
+  }
+  .vitaslimex-css-one-one {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #353535;
+  }
+  .vitaslimex-css-one-one .row-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-one .social-row {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-one .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vitaslimex-css-one-one .row .foot-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .vitaslimex-css-one-one .row .foot-menu li {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .vitaslimex-css-one-one .row .foot-menu li p {
+    margin: 0;
+  }
+  .vitaslimex-css-one-one .row .social-list {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .vitaslimex-css-one-one .row .social-list .vitaslimex-iconfont-social {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .vitaslimex-css-one-one .row .social-list .soc-item {
+    margin: 0 .5rem;
+  }
+  .vitaslimex-css-one-one .row .social-list a {
+    margin: 0;
+    opacity: .5;
+    transition: .2s linear;
+  }
+  .vitaslimex-css-one-one .row .social-list a:hover {
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-css-one-one .row .social-list {
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  }
+  .vitaslimex-css-one-one .row .row-copirayt {
+    word-break: break-word;
+    width: 100%;
+  }
+  .vitaslimex-css-one-one .row .row-copirayt p {
+    width: 100%;
+  }
+  .vitaslimex-css-one-one .row .vitaslimex-text {
+    text-align: center;
+  }
+  .vitaslimex-css-one-two {
+    z-index: 1000;
+    width: 100%;
+  }
+  .vitaslimex-css-one-two nav.vitaslimex-navbar {
+    position: fixed;
+  }
+  .vitaslimex-css-one-two .dropdown-item:before {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    content: "\e966";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-one-two .dropdown-menu {
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .vitaslimex-css-one-two .dropdown-item {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .vitaslimex-css-one-two .dropdown-item:hover,
+  .vitaslimex-css-one-two .dropdown-item:focus {
+    background: #6592e6 !important;
+    color: white !important;
+  }
+  .vitaslimex-css-one-two .dropdown-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .vitaslimex-css-one-two .dropdown-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .vitaslimex-css-one-two .nav-dropdown .link {
+    padding: 0 0.3em !important;
+    margin: 0.667em 1em !important;
+  }
+  .vitaslimex-css-one-two .nav-dropdown .link.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .vitaslimex-css-one-two .nav-link {
+    position: relative;
+  }
+  .vitaslimex-css-one-two .vitaslimex-container {
+    display: flex;
+    margin: auto;
+  }
+  .vitaslimex-css-one-two .iconfont-wrapper {
+    color: #000000 !important;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .vitaslimex-css-one-two .dropdown-menu,
+  .vitaslimex-css-one-two .vitaslimex-navbar.opened {
+    background: #182D56 !important;
+  }
+  .vitaslimex-css-one-two .nav-item:focus,
+  .vitaslimex-css-one-two .nav-link:focus {
+    outline: none;
+  }
+  .vitaslimex-css-one-two .dropdown .dropdown-menu .dropdown-item {
+    width: auto;
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-one-two .dropdown .dropdown-menu .dropdown-item::after {
+    right: 0.5rem;
+  }
+  .vitaslimex-css-one-two .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont {
+    margin-right: 0.5rem;
+    vertical-align: sub;
+  }
+  .vitaslimex-css-one-two .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont:before {
+    display: inline-block;
+    transform: scale(1, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-one-two .collapsed .dropdown-menu .dropdown-item:before {
+    display: none;
+  }
+  .vitaslimex-css-one-two .collapsed .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.235em 1.5em 0.235em 1.5em !important;
+    transition: none;
+    margin: 0 !important;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar {
+    min-height: 70px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    background: #182D56;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.opened {
+    transition: all 0.3s;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar .dropdown-item {
+    padding: 0.5rem 1.8rem;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar .vitaslimex-navbar-logo img {
+    width: auto;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar .vitaslimex-navbar-collapse {
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed {
+    justify-content: center;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed .nav-item .nav-link::before {
+    display: none;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed.opened .dropdown-menu {
+    top: 0;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 41%;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed ul.vitaslimex-navbar-nav li {
+    margin: auto;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.collapsed .icons-menu {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-css-one-two .vitaslimex-navbar .nav-item .nav-link::before {
+      display: none;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar.opened .dropdown-menu {
+      top: 0;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .dropdown-menu .dropdown-submenu {
+      left: 0 !important;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .dropdown-menu .dropdown-item:after {
+      right: auto;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+      margin-left: 0.5rem;
+      margin-top: 0.2rem;
+      border-top: 0.35em solid;
+      border-right: 0.35em solid transparent;
+      border-left: 0.35em solid transparent;
+      border-bottom: 0;
+      top: 40%;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .vitaslimex-navbar-logo img {
+      height: 3rem !important;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar ul.vitaslimex-navbar-nav li {
+      margin: auto;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .dropdown-menu .dropdown-item {
+      padding: 0.25rem 1.5rem !important;
+      text-align: center;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .vitaslimex-navbar-brand {
+      flex-shrink: initial;
+      flex-basis: auto;
+      word-break: break-word;
+      padding-right: 2rem;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .vitaslimex-navbar-toggler {
+      flex-basis: auto;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar .icons-menu {
+      padding-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.vitaslimex-navbar-short {
+    min-height: 60px;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-logo img {
+    height: 2.5rem !important;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-brand {
+    min-height: 60px;
+    padding: 0;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar-brand {
+    min-height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    word-break: break-word;
+    z-index: 1;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar-brand .vitaslimex-caption {
+    line-height: inherit !important;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar-brand .vitaslimex-navbar-logo a {
+    outline: none;
+  }
+  .vitaslimex-css-one-two .dropdown-item.active,
+  .vitaslimex-css-one-two .dropdown-item:active {
+    background-color: transparent;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar-expand-lg .vitaslimex-navbar-nav .nav-link {
+    padding: 0;
+  }
+  .vitaslimex-css-one-two .nav-dropdown .link.dropdown-toggle {
+    margin-right: 1.667em;
+  }
+  .vitaslimex-css-one-two .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+    margin-right: 0;
+    padding: 0.667em 1.667em;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu {
+    background: #182D56;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+    margin: 0;
+    left: 100%;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar .dropdown.open > .dropdown-menu {
+    display: block;
+  }
+  .vitaslimex-css-one-two ul.vitaslimex-navbar-nav {
+    flex-wrap: wrap;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar-buttons {
+    text-align: center;
+    min-width: 170px;
+  }
+  .vitaslimex-css-one-two button.vitaslimex-navbar-toggler {
+    outline: none;
+    width: 31px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    align-self: center;
+  }
+  .vitaslimex-css-one-two button.vitaslimex-navbar-toggler .vitaslimex-hamburger span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-one-two button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(1) {
+    top: 0;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-two button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(2) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-css-one-two button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(3) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-css-one-two button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(4) {
+    top: 16px;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-two nav.opened .vitaslimex-hamburger span:nth-child(1) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-two nav.opened .vitaslimex-hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-css-one-two nav.opened .vitaslimex-hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-css-one-two nav.opened .vitaslimex-hamburger span:nth-child(4) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-two .vitaslimex-navbar-dropdown {
+    padding: 0 1rem;
+    position: fixed;
+  }
+  .vitaslimex-css-one-two a.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-two .icons-menu {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .vitaslimex-css-one-two .vitaslimex-navbar {
+      height: 70px;
+    }
+    .vitaslimex-css-one-two .vitaslimex-navbar.opened {
+      height: auto;
+    }
+    .vitaslimex-css-one-two .nav-item .nav-link:hover::before {
+      width: 175%;
+      max-width: calc(100% + 2rem);
+      left: -1rem;
+    }
+  }
+  .vitaslimex-css-one-three {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-one-three .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-css-one-three .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-css-one-three .vitaslimex-section-title {
+    text-align: left;
+  }
+  .vitaslimex-css-one-three .vitaslimex-section-subtitle {
+    text-align: left;
+  }
+  .vitaslimex-css-one-four {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #353535;
+  }
+  .vitaslimex-css-one-four .row-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-four .social-row {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-four .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vitaslimex-css-one-four .row .foot-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .vitaslimex-css-one-four .row .foot-menu li {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .vitaslimex-css-one-four .row .foot-menu li p {
+    margin: 0;
+  }
+  .vitaslimex-css-one-four .row .social-list {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .vitaslimex-css-one-four .row .social-list .vitaslimex-iconfont-social {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .vitaslimex-css-one-four .row .social-list .soc-item {
+    margin: 0 .5rem;
+  }
+  .vitaslimex-css-one-four .row .social-list a {
+    margin: 0;
+    opacity: .5;
+    transition: .2s linear;
+  }
+  .vitaslimex-css-one-four .row .social-list a:hover {
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-css-one-four .row .social-list {
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  }
+  .vitaslimex-css-one-four .row .row-copirayt {
+    word-break: break-word;
+    width: 100%;
+  }
+  .vitaslimex-css-one-four .row .row-copirayt p {
+    width: 100%;
+  }
+  .vitaslimex-css-one-four .row .vitaslimex-text {
+    text-align: center;
+  }
+  .vitaslimex-css-one-five {
+    z-index: 1000;
+    width: 100%;
+  }
+  .vitaslimex-css-one-five nav.vitaslimex-navbar {
+    position: fixed;
+  }
+  .vitaslimex-css-one-five .dropdown-item:before {
+    font-family: 'Roboto Condensed', Arial, sans-serif !important;
+    content: "\e966";
+    display: inline-block;
+    width: 0;
+    position: absolute;
+    left: 1rem;
+    top: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1;
+    font-size: inherit;
+    vertical-align: middle;
+    text-align: center;
+    overflow: hidden;
+    transform: scale(0, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-one-five .dropdown-menu {
+    padding: 0;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  }
+  .vitaslimex-css-one-five .dropdown-item {
+    border-bottom: 1px solid #e6e6e6;
+  }
+  .vitaslimex-css-one-five .dropdown-item:hover,
+  .vitaslimex-css-one-five .dropdown-item:focus {
+    background: #6592e6 !important;
+    color: white !important;
+  }
+  .vitaslimex-css-one-five .dropdown-item:first-child {
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+  }
+  .vitaslimex-css-one-five .dropdown-item:last-child {
+    border-bottom: none;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+  }
+  .vitaslimex-css-one-five .nav-dropdown .link {
+    padding: 0 0.3em !important;
+    margin: 0.667em 1em !important;
+  }
+  .vitaslimex-css-one-five .nav-dropdown .link.dropdown-toggle::after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+  }
+  .vitaslimex-css-one-five .nav-link {
+    position: relative;
+  }
+  .vitaslimex-css-one-five .vitaslimex-container {
+    display: flex;
+    margin: auto;
+  }
+  .vitaslimex-css-one-five .iconfont-wrapper {
+    color: #000000 !important;
+    font-size: 1.5rem;
+    padding-right: 0.5rem;
+  }
+  .vitaslimex-css-one-five .dropdown-menu,
+  .vitaslimex-css-one-five .vitaslimex-navbar.opened {
+    background: #182D56 !important;
+  }
+  .vitaslimex-css-one-five .nav-item:focus,
+  .vitaslimex-css-one-five .nav-link:focus {
+    outline: none;
+  }
+  .vitaslimex-css-one-five .dropdown .dropdown-menu .dropdown-item {
+    width: auto;
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-one-five .dropdown .dropdown-menu .dropdown-item::after {
+    right: 0.5rem;
+  }
+  .vitaslimex-css-one-five .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont {
+    margin-right: 0.5rem;
+    vertical-align: sub;
+  }
+  .vitaslimex-css-one-five .dropdown .dropdown-menu .dropdown-item .vitaslimex-iconfont:before {
+    display: inline-block;
+    transform: scale(1, 1);
+    transition: all 0.25s ease-in-out;
+  }
+  .vitaslimex-css-one-five .collapsed .dropdown-menu .dropdown-item:before {
+    display: none;
+  }
+  .vitaslimex-css-one-five .collapsed .dropdown .dropdown-menu .dropdown-item {
+    padding: 0.235em 1.5em 0.235em 1.5em !important;
+    transition: none;
+    margin: 0 !important;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar {
+    min-height: 70px;
+    transition: all 0.3s;
+    border-bottom: 1px solid transparent;
+    position: absolute;
+    background: #182D56;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.opened {
+    transition: all 0.3s;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar .dropdown-item {
+    padding: 0.5rem 1.8rem;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar .vitaslimex-navbar-logo img {
+    width: auto;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar .vitaslimex-navbar-collapse {
+    justify-content: flex-end;
+    z-index: 1;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed {
+    justify-content: center;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed .nav-item .nav-link::before {
+    display: none;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed.opened .dropdown-menu {
+    top: 0;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-submenu {
+    left: 0 !important;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item:after {
+    right: auto;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+    margin-left: 0.5rem;
+    margin-top: 0.2rem;
+    border-top: 0.35em solid;
+    border-right: 0.35em solid transparent;
+    border-left: 0.35em solid transparent;
+    border-bottom: 0;
+    top: 41%;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed ul.vitaslimex-navbar-nav li {
+    margin: auto;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed .dropdown-menu .dropdown-item {
+    padding: 0.25rem 1.5rem;
+    text-align: center;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.collapsed .icons-menu {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  @media (max-width: 991px) {
+    .vitaslimex-css-one-five .vitaslimex-navbar .nav-item .nav-link::before {
+      display: none;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar.opened .dropdown-menu {
+      top: 0;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .dropdown-menu .dropdown-submenu {
+      left: 0 !important;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .dropdown-menu .dropdown-item:after {
+      right: auto;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .dropdown-menu .dropdown-toggle[data-toggle="dropdown-submenu"]:after {
+      margin-left: 0.5rem;
+      margin-top: 0.2rem;
+      border-top: 0.35em solid;
+      border-right: 0.35em solid transparent;
+      border-left: 0.35em solid transparent;
+      border-bottom: 0;
+      top: 40%;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .vitaslimex-navbar-logo img {
+      height: 3rem !important;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar ul.vitaslimex-navbar-nav li {
+      margin: auto;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .dropdown-menu .dropdown-item {
+      padding: 0.25rem 1.5rem !important;
+      text-align: center;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .vitaslimex-navbar-brand {
+      flex-shrink: initial;
+      flex-basis: auto;
+      word-break: break-word;
+      padding-right: 2rem;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .vitaslimex-navbar-toggler {
+      flex-basis: auto;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar .icons-menu {
+      padding-left: 0;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+    }
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.vitaslimex-navbar-short {
+    min-height: 60px;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-logo img {
+    height: 2.5rem !important;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.vitaslimex-navbar-short .vitaslimex-navbar-brand {
+    min-height: 60px;
+    padding: 0;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar-brand {
+    min-height: 70px;
+    flex-shrink: 0;
+    align-items: center;
+    margin-right: 0;
+    padding: 10px 0;
+    transition: all 0.3s;
+    word-break: break-word;
+    z-index: 1;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar-brand .vitaslimex-caption {
+    line-height: inherit !important;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar-brand .vitaslimex-navbar-logo a {
+    outline: none;
+  }
+  .vitaslimex-css-one-five .dropdown-item.active,
+  .vitaslimex-css-one-five .dropdown-item:active {
+    background-color: transparent;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar-expand-lg .vitaslimex-navbar-nav .nav-link {
+    padding: 0;
+  }
+  .vitaslimex-css-one-five .nav-dropdown .link.dropdown-toggle {
+    margin-right: 1.667em;
+  }
+  .vitaslimex-css-one-five .nav-dropdown .link.dropdown-toggle[aria-expanded="true"] {
+    margin-right: 0;
+    padding: 0.667em 1.667em;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu {
+    background: #182D56;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar.vitaslimex-navbar-expand-lg .dropdown .dropdown-menu .dropdown-submenu {
+    margin: 0;
+    left: 100%;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar .dropdown.open > .dropdown-menu {
+    display: block;
+  }
+  .vitaslimex-css-one-five ul.vitaslimex-navbar-nav {
+    flex-wrap: wrap;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar-buttons {
+    text-align: center;
+    min-width: 170px;
+  }
+  .vitaslimex-css-one-five button.vitaslimex-navbar-toggler {
+    outline: none;
+    width: 31px;
+    height: 20px;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    align-self: center;
+  }
+  .vitaslimex-css-one-five button.vitaslimex-navbar-toggler .vitaslimex-hamburger span {
+    position: absolute;
+    right: 0;
+    width: 30px;
+    height: 2px;
+    border-right: 5px;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-one-five button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(1) {
+    top: 0;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-five button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(2) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-css-one-five button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(3) {
+    top: 8px;
+    transition: all 0.15s;
+  }
+  .vitaslimex-css-one-five button.vitaslimex-navbar-toggler .vitaslimex-hamburger span:nth-child(4) {
+    top: 16px;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-five nav.opened .vitaslimex-hamburger span:nth-child(1) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-five nav.opened .vitaslimex-hamburger span:nth-child(2) {
+    transform: rotate(45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-css-one-five nav.opened .vitaslimex-hamburger span:nth-child(3) {
+    transform: rotate(-45deg);
+    transition: all 0.25s;
+  }
+  .vitaslimex-css-one-five nav.opened .vitaslimex-hamburger span:nth-child(4) {
+    top: 8px;
+    width: 0;
+    opacity: 0;
+    right: 50%;
+    transition: all 0.2s;
+  }
+  .vitaslimex-css-one-five .vitaslimex-navbar-dropdown {
+    padding: 0 1rem;
+    position: fixed;
+  }
+  .vitaslimex-css-one-five a.nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-five .icons-menu {
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.3rem;
+    text-align: center;
+  }
+  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+    .vitaslimex-css-one-five .vitaslimex-navbar {
+      height: 70px;
+    }
+    .vitaslimex-css-one-five .vitaslimex-navbar.opened {
+      height: auto;
+    }
+    .vitaslimex-css-one-five .nav-item .nav-link:hover::before {
+      width: 175%;
+      max-width: calc(100% + 2rem);
+      left: -1rem;
+    }
+  }
+  .vitaslimex-css-one-six {
+    padding-top: 9rem;
+    padding-bottom: 5rem;
+    background-color: #ffffff;
+  }
+  .vitaslimex-css-one-six .vitaslimex-fallback-image.disabled {
+    display: none;
+  }
+  .vitaslimex-css-one-six .vitaslimex-fallback-image {
+    display: block;
+    background-size: cover;
+    background-position: center center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+  }
+  .vitaslimex-css-one-six .vitaslimex-section-title {
+    text-align: left;
+  }
+  .vitaslimex-css-one-six .vitaslimex-section-subtitle {
+    text-align: left;
+  }
+  .vitaslimex-css-one-seven {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    background-color: #353535;
+  }
+  .vitaslimex-css-one-seven .row-links {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-seven .social-row {
+    width: 100%;
+    justify-content: center;
+  }
+  .vitaslimex-css-one-seven .row {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .vitaslimex-css-one-seven .row .foot-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .vitaslimex-css-one-seven .row .foot-menu li {
+    padding: 0 1rem 1rem 1rem;
+  }
+  .vitaslimex-css-one-seven .row .foot-menu li p {
+    margin: 0;
+  }
+  .vitaslimex-css-one-seven .row .social-list {
+    width: auto;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  .vitaslimex-css-one-seven .row .social-list .vitaslimex-iconfont-social {
+    font-size: 1.5rem;
+    color: #ffffff;
+  }
+  .vitaslimex-css-one-seven .row .social-list .soc-item {
+    margin: 0 .5rem;
+  }
+  .vitaslimex-css-one-seven .row .social-list a {
+    margin: 0;
+    opacity: .5;
+    transition: .2s linear;
+  }
+  .vitaslimex-css-one-seven .row .social-list a:hover {
+    opacity: 1;
+  }
+  @media (max-width: 767px) {
+    .vitaslimex-css-one-seven .row .social-list {
+      -webkit-justify-content: center;
+      justify-content: center;
+    }
+  }
+  .vitaslimex-css-one-seven .row .row-copirayt {
+    word-break: break-word;
+    width: 100%;
+  }
+  .vitaslimex-css-one-seven .row .row-copirayt p {
+    width: 100%;
+  }
+  .vitaslimex-css-one-seven .row .vitaslimex-text {
+    text-align: center;
+  }
+
+  .vitaslimex-rounded-image {
+    border-radius: 20px;
+    overflow: hidden;
+    display: block;
+    width: 100%;
+  }
+  .vitaslimex-rounded-image a {
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+  }
+  .vitaslimex-rounded-image img,
+  #vitaslimex-pricing .item-img img,
+  #order-vitaslimex .image-wrap img {
+    border-radius: 20px;
+    display: block;
+    width: 100%;
+    height: auto;
+    border: 1px solid #000;
+    box-sizing: border-box;
+  }
+  
